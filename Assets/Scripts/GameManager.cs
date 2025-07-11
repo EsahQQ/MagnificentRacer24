@@ -79,15 +79,15 @@ public class GameManager : MonoBehaviour
 
 			if(isFinished)
 			{
-				message = "Click or Press Enter to Play Again";
+				message = "Press Enter to Play Again";
 			}
 			else
 			{
-				message = "Click or Press Enter to Play";
+				message = "ФИНИШ НА ЗЕЛЕНОЙ СФЕРЕ\n\n\nWASD - ходьба\nSpace - прыжок[работает не всегда :)]\nShift - ускорение\n\n\nPress Enter to Play";
 			}
 
 			//Define a new rectangle for the UI on the screen
-			Rect startButton = new Rect(Screen.width/2 - 120, Screen.height/2, 240, 30);
+			Rect startButton = new Rect(Screen.width/2 - 120, Screen.height/2, 240, 200);
 
 			if (GUI.Button(startButton, message) || Input.GetKeyDown(KeyCode.Return))
 			{
